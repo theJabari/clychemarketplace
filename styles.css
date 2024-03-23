@@ -1,0 +1,41 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-btn {
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 9999; /* Ensure button is above other content */
+    
+  }
+  
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden */
+    width: 200px;
+    height: 50%;
+    background-color: #1411b1;
+    padding: 45px;
+    transition: left 0.3s ease;
+    z-index: 888; /* Ensure menu is above other content */
+    border-radius: 20px;
+  }
+  
+  .side-menu.active {
+    left: 0; /* Slide in when active */
+  }
+  
+  .side-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  
+  
