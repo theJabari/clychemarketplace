@@ -130,9 +130,3 @@ products.forEach((product) => {
 
 });
 
-function viewProductDetails(productId) {
-  window.location.href = `product.html?id=${productId}`;
-}
-
-
-
